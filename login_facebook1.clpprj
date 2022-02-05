@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\login_facebook1.clpprj">
+	<settings><PM_URL><![CDATA[C:/xampp/htdocs/Login-with-facebook-using-php-master/]]></PM_URL><PM_HOME_URL><![CDATA[C:/xampp/htdocs/Login-with-facebook-using-php-master/]]></PM_HOME_URL><PM_LIBS><![CDATA[]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><lastopfiles>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\index.php"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\User.php"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\fbConfig.php"/>
+	</lastopfiles>
+	<errors version="5.11">
+	</errors>
+	<cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><laravael>
+	</laravael><smartyassings>
+	</smartyassings><twigtemplate>
+	</twigtemplate><yiidata>
+	</yiidata>
+	<todoblock>
+	</todoblock>
+	<dbgurls>
+	</dbgurls>
+	<filescache>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php" crc="1491103344"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php" crc="1491103344"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\User.php" crc="1618226240"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\logout.php" crc="1491103344"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\index.php" crc="1618226446"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\fbConfig.php" crc="1491103344"/>
+		<file name="C:\xampp\htdocs\Facebook-API-Login-PHP-master\dbUsers.sql" crc="1491103344"/>
+	</filescache>
+</project>

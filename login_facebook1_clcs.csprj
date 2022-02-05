@@ -1,0 +1,166 @@
+<codestructure version="5.15">
+<phptree>
+<treenode node="base_facebook.php;PHP:PHP Include;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f14;17;31;17;;;;vpos;;v;;a;;r&#10;Description&#10;     Copyright 2011 Facebook, Inc.;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="fbConfig.php;PHP:PHP Include;C:\xampp\htdocs\Facebook-API-Login-PHP-master\logout.php;f14;2;26;2;;C:\xampp\htdocs\Facebook-API-Login-PHP-master\index.php;f14;2;26;2;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="inc/facebook.php;PHP:PHP Include;C:\xampp\htdocs\Facebook-API-Login-PHP-master\fbConfig.php;f14;4;30;4;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="User.php;PHP:PHP Include;C:\xampp\htdocs\Facebook-API-Login-PHP-master\index.php;f14;3;22;3;;;;vpos;;v;;a;;r;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="BaseFacebook;PHP:Class Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;117;1;1435;;;;vpos;;v;;a;;r&#10;Definition&#10;    class BaseFacebook&#10;&#10;Description&#10;     Provides access to the Facebook Platform.  This class provides a majority of the functionality needed, but the class is abstract because it is designed to be sub-classed.  The subclass must implement the four abstract methods listed at the bottom of the file.;;d0,118;;b0,0;;m0;;e">
+<treenode node="SIGNED_REQUEST_ALGORITHM;PHP:PHP Word;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f7;127;32;127;;;;vpos;;v;;a;;r&#10;Description&#10;     Signed Request Algorithm.;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="VERSION;PHP:PHP Word;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f7;122;15;122;;;;vpos;;v;;a;;r&#10;Description&#10;     Version.;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="__construct;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;224;3;237;;;;vpos;;v;;a;;r&#10;Definition&#10;    __construct($config)&#10;&#10;Description&#10;     Initialize a Facebook Application.&#10;&#10;Parameters:&#10;    array $config - The application configuration;;d39,224;;b1,0;;m0;;earray $config;;p">
+</treenode>
+<treenode node="_graph;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;854;3;880;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    _graph($path, $method = &apos;GET&apos;, $params = array())&#10;&#10;Description&#10;     Invoke the Graph API.&#10;&#10;Parameters:&#10;    string $path - The path (required)&#10;    string $method - The http method (default &apos;GET&apos;)&#10;    array $params - The query/post data&#10;&#10;Return:&#10;   The decoded response object;;d71,854;;b2,0;;m0;;estring $path;;pstring $method;;parray $params;;p">
+</treenode>
+<treenode node="_oauthRequest;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;891;3;904;;;;vpos;;v;;astring;;r&#10;Definition&#10;    _oauthRequest($url, $params)&#10;&#10;Description&#10;     Make a OAuth Request.&#10;&#10;Parameters:&#10;    string $url - The path (required)&#10;    array $params - The query/post data&#10;&#10;Return:&#10;   The decoded response object;;d50,891;;b2,0;;m0;;estring $url;;parray $params;;p">
+</treenode>
+<treenode node="_restserver;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;803;3;827;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    _restserver($params)&#10;&#10;Description&#10;     Invoke the old restserver.php endpoint.&#10;&#10;Parameters:&#10;    array $params - Method call object&#10;&#10;Return:&#10;   The decoded response object;;d42,803;;b2,0;;m0;;earray $params;;p">
+</treenode>
+<treenode node="api;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;643;3;650;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    api(/* polymorphic */)&#10;&#10;Description&#10;     Make an API call.&#10;&#10;Return:&#10;   The decoded response;;d41,643;;b1,0;;m0;;e">
+</treenode>
+<treenode node="base64UrlDecode;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f19;1296;3;1298;;;;vpos;;v;;astring;;r&#10;Definition&#10;    base64UrlDecode($input)&#10;&#10;Description&#10;     Base64 encoding that doesn&apos;t need to be urlencode()ed. Exactly the same as base64_encode except it uses - instead of + _ instead of / No padded =&#10;&#10;Parameters:&#10;    string $input - base64UrlEncoded string;;d52,1296;;b2,5;;m0;;estring $input;;p">
+</treenode>
+<treenode node="base64UrlEncode;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f19;1309;3;1313;;;;vpos;;v;;astring;;r&#10;Definition&#10;    base64UrlEncode($input)&#10;&#10;Description&#10;     Base64 encoding that doesn&apos;t need to be urlencode()ed. Exactly the same as base64_encode except it uses - instead of + _ instead of /&#10;&#10;Parameters:&#10;    string $input - string&#10;&#10;Return:&#10;   base64Url encoded string;;d52,1309;;b2,5;;m0;;estring $input;;p">
+</treenode>
+<treenode node="clearAllPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f21;1434;54;1434;;;;vpos;;v;;avoid;;r&#10;Description&#10;     Clear all data from the persistent storage;;d-1,-1;;b2,0;;m0;;e">
+</treenode>
+<treenode node="clearPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f21;1427;55;1427;;;;vpos;;v;;avoid;;r&#10;Description&#10;     Clear the data with $key from the persistent storage&#10;&#10;Parameters:&#10;    string $key;;d-1,-1;;b2,0;;m0;;estring $key;;p">
+</treenode>
+<treenode node="destroySession;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;1318;3;1342;;;;vpos;;v;;a;;r&#10;Definition&#10;    destroySession()&#10;&#10;Description&#10;     Destroy the current session;;d35,1318;;b1,0;;m0;;e">
+</treenode>
+<treenode node="endsWith;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f19;1382;3;1388;;;;vpos;;v;;a;;r;;d51,1382;;b2,5;;m0;;ebig;;psmall;;p">
+</treenode>
+<treenode node="errorLog;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f19;1275;3;1284;;;;vpos;;v;;a;;r&#10;Definition&#10;    errorLog($msg)&#10;&#10;Description&#10;     Prints to the error log if you aren&apos;t in command line mode.&#10;&#10;Parameters:&#10;    string $msg - Log message;;d43,1275;;b2,5;;m0;;estring $msg;;p">
+</treenode>
+<treenode node="establishCSRFTokenState;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;738;3;743;;;;vpos;;v;;avoid;;r&#10;Definition&#10;    establishCSRFTokenState()&#10;&#10;Description&#10;     Lays down a CSRF state token for this process.;;d47,738;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getAccessToken;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;397;3;413;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getAccessToken()&#10;&#10;Description&#10;     Determines the access token that should be used for API calls. The first time this is called, $this-&gt;accessToken is set equal to either a valid user access token, or it&apos;s set to the application access token if a valid user access token wasn&apos;t available.  Subsequent calls return whatever the first call returned.&#10;&#10;Return:&#10;   The access token;;d35,397;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getAccessTokenFromCode;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;757;3;793;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    getAccessTokenFromCode($code, $redirect_uri = null)&#10;&#10;Description&#10;     Retrieves an access token for the given authorization code (previously generated from www.facebook.com on behalf of a specific user).  The authorization code is sent to graph.facebook.com and a legitimate access token is generated provided the access token and the user for which it was generated all match, and the user is either logged in to Facebook or has granted an offline access permission.&#10;&#10;Parameters:&#10;    string $code - An authorization code&#10;&#10;Return:&#10;   An access token exchanged for the authorization code, or;;d73,757;;b2,0;;m0;;ecode;;predirect_uri;;p">
+</treenode>
+<treenode node="getApiSecret;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;288;3;290;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getApiSecret()&#10;&#10;Description&#10;     Get the App Secret.&#10;&#10;Return:&#10;   the App Secret;;d33,288;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getApiUrl;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1041;3;1110;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getApiUrl($method)&#10;&#10;Description&#10;     Build the URL for api given parameters.&#10;&#10;Parameters:&#10;     $method - String the method name&#10;&#10;Return:&#10;   The URL for the given parameters;;d40,1041;;b2,0;;m0;;e $method;;p">
+</treenode>
+<treenode node="getAppId;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;255;3;257;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getAppId()&#10;&#10;Description&#10;     Get the Application ID.&#10;&#10;Return:&#10;   the Application ID;;d29,255;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getApplicationAccessToken;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;729;3;731;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getApplicationAccessToken()&#10;&#10;Description&#10;     Returns the access token that should be used for logged out users when no authorization code is available.&#10;&#10;Return:&#10;   The application access token, useful for gathering;;d49,729;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getAppSecret;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;297;3;299;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getAppSecret()&#10;&#10;Description&#10;     Get the App Secret.&#10;&#10;Return:&#10;   the App Secret;;d33,297;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getBaseDomain;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1166;3;1175;;;;vpos;;v;;a;;r&#10;Definition&#10;    getBaseDomain()&#10;&#10;Description&#10;     Get the base domain used for the cookie.;;d37,1166;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getCode;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;684;3;701;;;;vpos;;v;;amixed;;r&#10;Definition&#10;    getCode()&#10;&#10;Description&#10;     Get the authorization code from the query parameters, if it exists, and otherwise return false to signal no authorization code was discoverable.&#10;&#10;Return:&#10;   The authorization code, or false if the authorization;;d31,684;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getCurrentUrl;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1185;3;1216;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getCurrentUrl()&#10;&#10;Description&#10;     /** Returns the Current URL, stripping it of known FB parameters that should not persist.&#10;&#10;Return:&#10;   The current URL;;d37,1185;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getFileUploadSupport;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;317;3;319;;;;vpos;;v;;aboolean;;r&#10;Definition&#10;    getFileUploadSupport()&#10;&#10;Description&#10;     Get the file upload support status.&#10;&#10;Return:&#10;   true if and only if the server supports file upload;;d41,317;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getHttpHost;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1136;3;1141;;;;vpos;;v;;a;;r;;d35,1136;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getHttpProtocol;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1143;3;1161;;;;vpos;;v;;a;;r;;d39,1143;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getLoginStatusUrl;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;624;3;636;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getLoginStatusUrl($params=array())&#10;&#10;Description&#10;     Get a login status URL to fetch the status from Facebook.&#10;&#10;Parameters:&#10;    array $params - Provide custom parameters&#10;&#10;Return:&#10;   The URL for the logout flow;;d53,624;;b1,0;;m0;;earray $params;;p">
+</treenode>
+<treenode node="getLoginUrl;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;573;3;591;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getLoginUrl($params=array())&#10;&#10;Description&#10;     Get a Login URL for use with redirects. By default, full page redirect is assumed. If you are using the generated URL with a window.open() call in JavaScript, you can pass in display=popup as part of the $params.&#10;&#10;Parameters:&#10;    array $params - Provide custom parameters&#10;&#10;Return:&#10;   The URL for the login flow;;d47,573;;b1,0;;m0;;earray $params;;p">
+</treenode>
+<treenode node="getLogoutUrl;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;602;3;611;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getLogoutUrl($params=array())&#10;&#10;Description&#10;     Get a Logout URL suitable for use with redirects.&#10;&#10;Parameters:&#10;    array $params - Provide custom parameters&#10;&#10;Return:&#10;   The URL for the logout flow;;d48,602;;b1,0;;m0;;earray $params;;p">
+</treenode>
+<treenode node="getMetadataCookie;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1349;3;1373;;;;vpos;;v;;aan;;r&#10;Definition&#10;    getMetadataCookie()&#10;&#10;Description&#10;     Parses the metadata cookie that our Javascript API set&#10;&#10;Return:&#10;   array mapping key to value;;d41,1349;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getMetadataCookieName;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;672;3;674;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getMetadataCookieName()&#10;&#10;Description&#10;     Constructs and returns the name of the coookie that potentially contain metadata. The cookie is not set by the BaseFacebook class, but it may be set by the JavaScript SDK.&#10;&#10;Return:&#10;   the name of the cookie that would house metadata;;d45,672;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f21;1419;71;1419;;;;vpos;;v;;amixed;;r&#10;Description&#10;     Get the data for $key, persisted by BaseFacebook::setPersistentData()&#10;&#10;Parameters:&#10;    string $key - The key of the data to retrieve&#10;    boolean $default - The default value to return if $key is not found;;d-1,-1;;b2,0;;m0;;estring $key;;pboolean $default;;p">
+</treenode>
+<treenode node="getSignedRequest;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;488;3;499;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getSignedRequest()&#10;&#10;Description&#10;     Retrieve the signed request, either from a request parameter or, if not present, from a cookie.&#10;&#10;Return:&#10;   the signed request, if available, or null otherwise;;d37,488;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getSignedRequestCookieName;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;661;3;663;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getSignedRequestCookieName()&#10;&#10;Description&#10;     Constructs and returns the name of the cookie that potentially houses the signed request for the app user. The cookie is not set by the BaseFacebook class, but it may be set by the JavaScript SDK.&#10;&#10;Return:&#10;   the name of the cookie that would house;;d50,661;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getUrl;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1121;3;1134;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getUrl($name, $path=&apos;&apos;, $params=array())&#10;&#10;Description&#10;     Build the URL for given domain alias, path and parameters.&#10;&#10;Parameters:&#10;     $name - string The name of the domain&#10;     $path - string Optional path (without a leading slash)&#10;     $params - array Optional query parameters&#10;&#10;Return:&#10;   The URL for the given parameters;;d62,1121;;b2,0;;m0;;e $name;;p $path;;p $params;;p">
+</treenode>
+<treenode node="getUser;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;507;3;514;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getUser()&#10;&#10;Description&#10;     Get the UID of the connected user, or 0 if the Facebook user is not connected.&#10;&#10;Return:&#10;   the UID if available;;d28,507;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getUserAccessToken;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;425;3;480;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getUserAccessToken()&#10;&#10;Description&#10;     Determines and returns the user access token, first using the signed request if present, and then falling back on the authorization code if present.  The intent is to return a valid user access token, or false if one is determined to not be available.&#10;&#10;Return:&#10;   A valid user access token, or false if one;;d42,425;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getUserFromAccessToken;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;713;3;720;;;;vpos;;v;;ainteger;;r&#10;Definition&#10;    getUserFromAccessToken()&#10;&#10;Description&#10;     Retrieves the UID with the understanding that $this-&gt;accessToken has already been set and is seemingly legitimate.  It relies on Facebook&apos;s Graph API to retrieve user information and then extract the user ID.&#10;&#10;Return:&#10;   Returns the UID of the Facebook user, or 0;;d46,713;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getUserFromAvailableData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;524;3;559;;;;vpos;;v;;ainteger;;r&#10;Definition&#10;    getUserFromAvailableData()&#10;&#10;Description&#10;     Determines the connected user by first examining any signed requests, then considering an authorization code, and then falling back to any persistent store storing the user.&#10;&#10;Return:&#10;   The id of the connected Facebook user,;;d48,524;;b2,0;;m0;;e">
+</treenode>
+<treenode node="isAllowedDomain;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f19;1375;3;1380;;;;vpos;;v;;a;;r;;d58,1375;;b2,5;;m0;;ebig;;psmall;;p">
+</treenode>
+<treenode node="isVideoPost;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;837;3;842;;;;vpos;;v;;aboolean;;r&#10;Definition&#10;    isVideoPost($path, $method = &apos;GET&apos;)&#10;&#10;Description&#10;     Return true if this is video post.&#10;&#10;Parameters:&#10;    string $path - The path&#10;    string $method - The http method (default &apos;GET&apos;)&#10;&#10;Return:&#10;   true if this is video post;;d57,837;;b2,0;;m0;;estring $path;;pstring $method;;p">
+</treenode>
+<treenode node="makeRequest;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;917;3;983;;;;vpos;;v;;astring;;r&#10;Definition&#10;    makeRequest($url, $params, $ch=null)&#10;&#10;Description&#10;     Makes an HTTP request. This method can be overridden by subclasses if developers want to do fancier things or use something other than curl to make the request.&#10;&#10;Parameters:&#10;    string $url - The URL to make the request to&#10;    array $params - The parameters to use for the POST body&#10;    CurlHandler $ch - Initialized curl handle&#10;&#10;Return:&#10;   The response text;;d58,917;;b2,0;;m0;;estring $url;;parray $params;;pCurlHandler $ch;;p">
+</treenode>
+<treenode node="makeSignedRequest;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1021;3;1033;;;;vpos;;v;;astring;;r&#10;Definition&#10;    makeSignedRequest($data)&#10;&#10;Description&#10;     Makes a signed_request blob using the given data.&#10;&#10;Parameters:&#10;    array - The data array&#10;&#10;Return:&#10;   The signed request;;d46,1021;;b2,0;;m0;;earray;;p">
+</treenode>
+<treenode node="parseSignedRequest;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;991;3;1013;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    parseSignedRequest($signed_request)&#10;&#10;Description&#10;     Parses a signed_request and validates the signature.&#10;&#10;Parameters:&#10;    string $signed_request - A signed token&#10;&#10;Return:&#10;   The payload inside it or null if the sig is wrong;;d57,991;;b2,0;;m0;;estring $signed_request;;p">
+</treenode>
+<treenode node="setAccessToken;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;340;3;343;;;;vpos;;v;;aBaseFacebook;;r&#10;Definition&#10;    setAccessToken($access_token)&#10;&#10;Description&#10;     Sets the access token for api calls.  Use this if you get your access token by other means and just want the SDK to use it.&#10;&#10;Parameters:&#10;    string $access_token - an access token;;d48,340;;b1,0;;m0;;estring $access_token;;p">
+</treenode>
+<treenode node="setApiSecret;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;266;3;269;;;;vpos;;v;;aBaseFacebook;;r&#10;Definition&#10;    setApiSecret($apiSecret)&#10;&#10;Description&#10;     Set the App Secret.&#10;&#10;Parameters:&#10;    string $apiSecret - The App Secret;;d43,266;;b1,0;;m0;;estring $apiSecret;;p">
+</treenode>
+<treenode node="setAppId;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;245;3;248;;;;vpos;;v;;aBaseFacebook;;r&#10;Definition&#10;    setAppId($appId)&#10;&#10;Description&#10;     Set the Application ID.&#10;&#10;Parameters:&#10;    string $appId - The Application ID;;d35,245;;b1,0;;m0;;estring $appId;;p">
+</treenode>
+<treenode node="setAppSecret;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;277;3;280;;;;vpos;;v;;aBaseFacebook;;r&#10;Definition&#10;    setAppSecret($appSecret)&#10;&#10;Description&#10;     Set the App Secret.&#10;&#10;Parameters:&#10;    string $appSecret - The App Secret;;d43,277;;b1,0;;m0;;estring $appSecret;;p">
+</treenode>
+<treenode node="setExtendedAccessToken;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;350;3;386;;;;vpos;;v;;a;;r&#10;Definition&#10;    setExtendedAccessToken()&#10;&#10;Description&#10;     Extend an access token, while removing the short-lived token that might have been generated via client-side flow. Thanks to http://bit.ly/b0Pt0H for the workaround.;;d43,350;;b1,0;;m0;;e">
+</treenode>
+<treenode node="setFileUploadSupport;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;307;3;310;;;;vpos;;v;;aBaseFacebook;;r&#10;Definition&#10;    setFileUploadSupport($fileUploadSupport)&#10;&#10;Description&#10;     Set the file upload support status.&#10;&#10;Parameters:&#10;    boolean $fileUploadSupport - The file upload support status;;d59,307;;b1,0;;m0;;eboolean $fileUploadSupport;;p">
+</treenode>
+<treenode node="setPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f21;1409;61;1409;;;;vpos;;v;;avoid;;r&#10;Description&#10;     Stores the given ($key, $value) pair, so that future calls to getPersistentData($key) return $value. This call may be in another request.&#10;&#10;Parameters:&#10;    string $key&#10;    array $value;;d-1,-1;;b2,0;;m0;;estring $key;;parray $value;;p">
+</treenode>
+<treenode node="shouldRetainParam;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1229;3;1237;;;;vpos;;v;;aboolean;;r&#10;Definition&#10;    shouldRetainParam($param)&#10;&#10;Description&#10;     Returns true if and only if the key or key/value pair should be retained as part of the query string.  This amounts to a brute-force search of the very small list of Facebook-specific params that should be stripped out.&#10;&#10;Parameters:&#10;    string $param - A key or key/value pair within a URL&apos;s query (e;;d47,1229;;b2,0;;m0;;estring $param;;p">
+</treenode>
+<treenode node="throwAPIException;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f12;1247;3;1267;;;;vpos;;v;;a;;r&#10;Definition&#10;    throwAPIException($result)&#10;&#10;Description&#10;     Analyzes the supplied result to see if it was thrown because the access token is no longer valid.  If that is the case, then we destroy the session.&#10;&#10;Parameters:&#10;     $result - array A record storing the error message returned;;d48,1247;;b2,0;;m0;;e $result;;p">
+</treenode>
+<treenode node="useFileUploadSupport;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;328;3;330;;;;vpos;;v;;aboolean;;r&#10;Definition&#10;    useFileUploadSupport()&#10;&#10;Description&#10;     DEPRECATED! Please use getFileUploadSupport instead.&#10;&#10;Return:&#10;   true if and only if the server supports file upload;;d41,328;;b1,0;;m0;;e">
+</treenode>
+</treenode>
+<treenode node="Facebook;PHP:Class Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f0;23;1;159;;;;vpos;;v;;aBaseFacebook;;c;;r&#10;Definition&#10;    class Facebook extends BaseFacebook&#10;&#10;Description&#10;     Extends the BaseFacebook class with the intent of using PHP sessions to store user ids and access tokens.;;d0,24;;b0,0;;m0;;e">
+<treenode node="FBSS_COOKIE_EXPIRE;PHP:PHP Word;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f7;29;26;29;;;;vpos;;v;;a;;r31556926;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="FBSS_COOKIE_NAME;PHP:PHP Word;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f7;25;24;25;;;;vpos;;v;;a;;r&apos;fbss&apos;;;d-1,-1;;b0,0;;m0;;e">
+</treenode>
+<treenode node="__construct;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f9;46;3;54;;;;vpos;;v;;a;;r&#10;Definition&#10;    __construct($config)&#10;&#10;Description&#10;     Identical to the parent constructor, except that we start a PHP session to store the user ID and access token if during the course of execution we discover them.&#10;&#10;Parameters:&#10;    Array $config - the application configuration;;d39,46;;b1,0;;m0;;eArray $config;;p">
+</treenode>
+<treenode node="clearAllPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;132;3;139;;;;vpos;;v;;a;;r;;d46,132;;b2,0;;m0;;e">
+</treenode>
+<treenode node="clearPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;122;3;130;;;;vpos;;v;;a;;r;;d47,122;;b2,0;;m0;;ekey;;p">
+</treenode>
+<treenode node="constructSessionVariableName;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;152;3;158;;;;vpos;;v;;a;;r;;d56,152;;b2,0;;m0;;ekey;;p">
+</treenode>
+<treenode node="deleteSharedSessionCookie;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;141;3;146;;;;vpos;;v;;a;;r;;d49,141;;b2,0;;m0;;e">
+</treenode>
+<treenode node="getPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;111;3;120;;;;vpos;;v;;a;;r;;d63,111;;b2,0;;m0;;ekey;;pdefault;;p">
+</treenode>
+<treenode node="getSharedSessionCookieName;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;148;3;150;;;;vpos;;v;;a;;r;;d50,148;;b2,0;;m0;;e">
+</treenode>
+<treenode node="initSharedSession;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;59;3;93;;;;vpos;;v;;a;;r;;d41,59;;b2,0;;m0;;e">
+</treenode>
+<treenode node="setPersistentData;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\facebook.php;f12;101;3;109;;;;vpos;;v;;a;;r&#10;Definition&#10;    setPersistentData($key, $value)&#10;&#10;Description&#10;     Provides the implementations of the inherited abstract methods.  The implementation uses PHP sessions to maintain a store for authorization codes, user ids, CSRF states, and access tokens.;;d53,101;;b2,0;;m0;;ekey;;pvalue;;p">
+</treenode>
+</treenode>
+<treenode node="FacebookApiException;PHP:Class Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f0;29;1;106;;;;vpos;;v;;aException;;c;;r&#10;Definition&#10;    class FacebookApiException extends Exception&#10;&#10;Description&#10;     Thrown when an API call returns an exception.;;d0,30;;b0,0;;m0;;e">
+<treenode node="__construct;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;41;3;60;;;;vpos;;v;;a;;r&#10;Definition&#10;    __construct($result)&#10;&#10;Description&#10;     Make a new API Exception with the given result.&#10;&#10;Parameters:&#10;    array $result - The result from the API server;;d39,41;;b1,0;;m0;;earray $result;;p">
+</treenode>
+<treenode node="__toString;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;99;3;105;;;;vpos;;v;;astring;;r&#10;Definition&#10;    __toString()&#10;&#10;Description&#10;     To make debugging easier.&#10;&#10;Return:&#10;   The string representation of the error;;d31,99;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getResult;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;67;3;69;;;;vpos;;v;;aarray;;r&#10;Definition&#10;    getResult()&#10;&#10;Description&#10;     Return the associated result object returned by the API server.&#10;&#10;Return:&#10;   The result from the API server;;d30,67;;b1,0;;m0;;e">
+</treenode>
+<treenode node="getType;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\inc\base_facebook.php;f9;77;3;92;;;;vpos;;v;;astring;;r&#10;Definition&#10;    getType()&#10;&#10;Description&#10;     Returns the associated type for the error. This will default to &apos;Exception&apos; when a type is not available.;;d28,77;;b1,0;;m0;;e">
+</treenode>
+</treenode>
+<treenode node="User;PHP:Class Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\User.php;f0;1;1;46;;;;vpos;;v;;a;;r;;d11,1;;b0,0;;m0;;e">
+<treenode node="__construct;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\User.php;f1;11;2;21;;;;vpos;;v;;a;;r;;d23,11;;b0,0;;m0;;e">
+</treenode>
+<treenode node="checkUser;PHP:Function Name;C:\xampp\htdocs\Facebook-API-Login-PHP-master\User.php;f1;23;2;45;;;;vpos;;v;;a;;r;;d40,23;;b0,0;;m0;;euserData;;p">
+</treenode>
+</treenode>
+</phptree>
+</codestructure>
